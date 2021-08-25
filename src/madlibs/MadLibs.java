@@ -181,6 +181,12 @@ public class MadLibs {
         putTogetherTheStory();
         System.out.println(getStory());
     }
+    
+    public void finish(){
+        System.out.println("-----------------------------");
+        System.out.println("Press Enter to end this game.");
+        scanner.nextLine();
+    }
 
     /**
      * @param args the command line arguments
@@ -190,6 +196,7 @@ public class MadLibs {
         MadLibs game = new MadLibs();
         game.printInstructions();
         game.play();
+        game.finish();
     }
 
 }
